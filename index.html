@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="AAGP"/>
+
+        <title>Team. AAGP</title>
+        <link rel="stylesheet" href="styles.css" />
+
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <Header>
+            <h1>A A G P</h1>
+        </Header>
+
+        <div class="menu-bar">
+            <div class="menu-bar__column">
+                <a href="members.html">
+                    <span class="menu-bar__menu">MEMBER</span>
+                </a>
+
+                <a href="about.html">
+                    <span class="menu-bar__menu">ABOUT</span>
+                </a>
+                
+                <a href="song.html">
+                    <span class="menu-bar__menu">SONG</span>
+                </a>
+                
+                <a href="contact.html">
+                    <span class="menu-bar__menu">CONTACT</span>
+                </a>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <img id="main-door_img"
+                 class="fit-picture"
+                 src="header_img.jpg"/>
+        </main>
+        
+        <div class="night_day--box">
+            <i class="far fa-lightbulb fa-lg"></i>
+            <input class="night_day" type="button" value="Day Mode" onclick="
+               if (document.querySelector('.night_day').value === 'Day Mode') {
+                   document.querySelector('body').style.backgroundColor = 'whitesmoke';
+                   document.querySelector('header').style.backgroundColor = 'gray';
+                   document.querySelector('#footer').style.color = 'black'
+
+                   document.querySelector('.night_day').value = 'Night Mode'
+                }
+
+               else {
+                     document.querySelector('body').style.backgroundColor = '#1e1f21';
+                     document.querySelector('header').style.backgroundColor = '#292a2d'
+                     document.querySelector('#footer').style.color = 'aliceblue'
+                     
+                     document.querySelector('.night_day').value = 'Day Mode'
+                }
+            ">
+
+        </div>
+ 
+        <footer id="footer">
+            <p>COPYRIGHT ©2021 BY LUANN KIM - ALL  RIGHTS  RESERVED</p>
+        </footer>
+
+
+        <script src="https://kit.fontawesome.com/e76db00f40.js" 
+                crossorigin="anonymous"></script>
+    </body>
+</html>

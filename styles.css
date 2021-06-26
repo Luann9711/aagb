@@ -1,0 +1,68 @@
+/* RESET */
+@import "reset.css";
+
+/* Import Components */
+@import "components/header_menu.css";
+@import "components/Img.css";
+
+/* Import Screens */
+@import "screens/home.css";
+
+body {
+  position: relative;
+  background-color: #1e1f21;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  bottom: 0px;
+  font-size: 12px;
+  color: whitesmoke;
+}
+
+.night_day--box {
+  display: flex;
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+
+  height: 40px;
+  width: 180px;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  background-color: #333638;
+  border-radius: 30px;
+
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+
+.night_day--box i {
+  color: aliceblue;
+  margin: 0px;
+  padding-left: 10px;
+
+  padding: 0px;
+}
+
+.night_day {
+  height: 35px;
+  width: 110px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  background-color: #333638;
+  border-radius: 30px;
+  border: none;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}

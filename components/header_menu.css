@@ -1,0 +1,35 @@
+header {
+  display: block;
+  text-align: center;
+  background-color: #292a2d;
+}
+
+h1 {
+  color: aliceblue;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+  margin: 0px;
+  padding: 22px;
+}
+
+.menu-bar {
+  display: block;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.menu-bar__column {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  border: 2.5px solid #313335;
+  padding: 13px 50px;
+  background-color: #292a2d;
+}
+
+.menu-bar__menu {
+  font-size: 18px;
+  font-family: "Trebuchet MS";
+  color: #f1f1f1;
+}
