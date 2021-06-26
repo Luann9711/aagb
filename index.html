@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <meta name="description" content="AAGP"/>
 
-        <title>Team. AAGP</title>
+        <title>Team. AAGb</title>
         <link rel="stylesheet" href="styles.css" />
 
         <style>
@@ -13,7 +13,7 @@
 
     <body>
         <Header>
-            <h1>A A G P</h1>
+            <h1>A A G B</h1>
         </Header>
 
         <div class="menu-bar">
@@ -46,8 +46,9 @@
             <i class="far fa-lightbulb fa-lg"></i>
             <input class="night_day" type="button" value="Day Mode" onclick="
                if (document.querySelector('.night_day').value === 'Day Mode') {
-                   document.querySelector('body').style.backgroundColor = 'whitesmoke';
-                   document.querySelector('header').style.backgroundColor = 'gray';
+                   document.querySelector('body').style.backgroundColor = 'white';
+                   document.querySelector('header').style.backgroundColor = 'white';
+                   document.querySelector('header h1').style.color = '#292a2d';
                    document.querySelector('#footer').style.color = 'black'
 
                    document.querySelector('.night_day').value = 'Night Mode'
@@ -56,6 +57,7 @@
                else {
                      document.querySelector('body').style.backgroundColor = '#1e1f21';
                      document.querySelector('header').style.backgroundColor = '#292a2d'
+                     document.querySelector('header h1').style.color = 'aliceblue';
                      document.querySelector('#footer').style.color = 'aliceblue'
                      
                      document.querySelector('.night_day').value = 'Day Mode'
