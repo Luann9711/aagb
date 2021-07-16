@@ -25,7 +25,7 @@ body {
   color: whitesmoke;
 }
 
-.night_day--box {
+.night_day__btn {
   display: flex;
   position: fixed;
   bottom: 70px;
@@ -34,35 +34,32 @@ body {
   height: 40px;
   width: 180px;
 
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: aliceblue;
   background-color: #333638;
-  border-radius: 30px;
 
   justify-content: space-evenly;
   align-items: center;
-
-  padding: 0px 10px;
+  border-top: 0px;
+  border-left: solid 0.1px #333638;
+  border-right: solid 0.1px #333638;
+  border-bottom: solid 1px #333638;
+  border-radius: 30px;
+  padding: 0px 7px;
   box-sizing: border-box;
 }
 
-.night_day--box i {
+.night_day__btn i {
   color: aliceblue;
   margin: 0px;
   padding-left: 10px;
-
   padding: 0px;
 }
 
-.night_day {
-  height: 35px;
-  width: 110px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: aliceblue;
-  background-color: #333638;
-  border-radius: 30px;
-  border: none;
-  margin: 0px;
-  display: flex;
-  justify-content: center;
+.night_day__btn span {
+  font-size: 13px;
+}
+
+.night_day__btn:hover {
+  background-color:#494e52;
 }
