@@ -1,5 +1,6 @@
 const nightDayButton = document.querySelector(".night_day__btn");
 const nightDayText = document.querySelector(".night_day__btn span");
+const nightDayIcon = document.querySelector(".night_day__btn i")
 
 const body = document.querySelector("body");
 const header = document.querySelector("header");
@@ -16,20 +17,25 @@ console.log(menuText);
 
 function changeMode() {
     if (nightDayText.innerText === LIGHTMODE) {
-        body.style.backgroundColor = "aliceblue";        // Full background
-        header.style.backgroundColor = "aliceblue";      // header background
+        body.style.backgroundColor = "white";        // Full background
+        header.style.backgroundColor = "white";      // header background
         logo.style.color = "#292a2d";
-        nightDayButton.style.backgroundColor = "aliceblue";
+        nightDayButton.style.backgroundColor = "white";
         nightDayText.style.color = "black";
-        menuBar.style.backgroundColor = "aliceblue";
+        menuBar.style.backgroundColor = "white";
+
+        // Menu Text
         menuText[0].style.color  = "black";
         menuText[1].style.color  = "black";
         menuText[2].style.color  = "black";
         menuText[3].style.color  = "black";
 
+        // Footer
         footer.style.color = "black";
 
-        nightDayText.innerText = "Dark Mode"
+        // Mode Button
+        nightDayText.innerText = "Dark Mode";
+        nightDayIcon.style.color = "black";
     }
 
     else {
@@ -46,7 +52,9 @@ function changeMode() {
 
         footer.style.color = "whitesmoke";
 
+        // Mode Button
         nightDayText.innerText = "Light Mode"
+        nightDayIcon.style.color = "aliceblue";
     }
 }
 
